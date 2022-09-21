@@ -74,14 +74,14 @@ if (defined('JETPACK__VERSION')) {
  */
 require get_template_directory() . '/_functions/helpers-setup.php';
 
-/**
+/*
  *
  * React App Setup
  *
  */
 // require get_template_directory() . '/_functions/react-setup.php';
 
-/**
+/*
  *
  * Adding Breadcrums
  *
@@ -89,7 +89,7 @@ require get_template_directory() . '/_functions/helpers-setup.php';
 
 // require get_template_directory() . '/_functions/breadcrum-function.php';
 
-/**
+/*
  *
  * CUSTOMIZING THE LOGIN SCREEN
  *
@@ -101,4 +101,4 @@ require get_template_directory() . '/_functions/helpers-setup.php';
  * COMPOSER CLASS LOADS
  */
 
-require __DIR__ . '/vendor/autoload.php';
+// require __DIR__ . '/vendor/autoload.php';

@@ -82,11 +82,13 @@ function print_taxonomy_ranks($terms = '')
 // add_action( 'wp_head', 'custom_dequeue', 9999 );
 
 // Replaces the excerpt "more" text by a link
-// function new_excerpt_more($more) {
-//        global $post;
-//   return ' ... <a class="moretag" href="'. get_permalink($post->ID) . '"> Read More ></a>';
-// }
-// add_filter('excerpt_more', 'new_excerpt_more');
+function new_excerpt_more($more)
+{
+ global $post;
+ return ' ... <a class="moretag btn btn-sm btn-dark btn-block mt-4" href="' . get_permalink($post->ID) . '"> Read More ></a>';
+}
+
+add_filter('excerpt_more', 'new_excerpt_more');
 
 // Remove Comments from Jetpack Carousel
 // function tweakjp_rm_comments_att( $open, $post_id ) {
